@@ -2,7 +2,8 @@
  * Write a function that returns the index of the first occurence of an element in the provided array
  */
 export function find(array, element) {
-    
+    let i = 0
+    while (i < array)
 }
 
 /**
