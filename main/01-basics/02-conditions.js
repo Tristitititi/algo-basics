@@ -2,7 +2,10 @@
  * Write a function that returns "raspberry !" if the provided fruit is a raspberry, and "doh !" otherwise
  */
 export function basicCondition(fruit) {
-    
+    if (fruit == "raspberry")
+    return "raspberry !"
+    else
+    return "doh !"
 }
 
 /**
@@ -12,13 +15,22 @@ export function basicCondition(fruit) {
  */
 export function guessTheNumber(n) {
     const random = Math.floor(10 * Math.random() + 1)
+    if (n > random)
+    return "higher !"
+    else if (n < random)
+    return "lower..."
+    else
+    return "Yes ! The number was {"+ random + "}"
 }
 
 /**
  * Write a function that computes the sum of the two given integer values. If the two values are the same, then return triple their sum
  */
 export function sumOrTriple(a, b) {
-    
+    if (a==b)
+    return ((a + b) * 3)
+    else if (a!=b)
+    return (a + b)
 }
 
 /**
@@ -27,14 +39,22 @@ export function sumOrTriple(a, b) {
  * To get the absolute difference of a number, use Math.abs(number)
  */
 export function absoluteDiff(n) {
-    
+    if (n > 51)
+    return (Math.abs(n - 51) * 3)
+    else
+    return Math.abs (n - 51)
 }
 
 /**
  * Write a function to check two given integers, and return true if one of them is 30 or if their sum is 30
  */
 export function is30OrSumIs30(a, b) {
-    
+    if (a === 30 || b === 30)
+    return true
+    else if (a + b === 30)
+    return true
+    else
+    return false
 }
 
 /**
