@@ -61,14 +61,26 @@ export function is30OrSumIs30(a, b) {
  * Write a function to check whether a given positive number is a multiple of 3 or a divisible by 7
  */
 export function isMultipleOf3OrDivisibleBy7(n) {
-    
+    let result;
+    if (n % 7 == 0 || n % 3 == 0) {
+    result = true }
+    else {
+    result = false }
+    return result;
 }
 
 /**
  * Write a function to check which number nearest to the value 100 among two given integers. Return 0 if the two numbers are equal
  */
 export function closestTo100(x, y) {
-    
+    let result;
+    if (Math.abs(100 - x) > Math.abs(100 - y)) {
+    return (y) }
+    else if (Math.abs(100 - x) < Math.abs(100 - y)) {
+    return (x) }
+    else {
+    result = 0 }
+    return result;
 }
 
 /**
@@ -82,5 +94,12 @@ export function closestTo100(x, y) {
  * if a word is unknown, "UNKNOWN" should be returned
  */
 export function categorizeWord(word) {
-    
+    if (word === "raspberry" || word === "orange" || word === "apple" || word === "banana")
+    return "FRUIT"
+    else if (word === "paris" || word === "london" || word === "new-york" || word === "berlin")
+    return "CITY"
+    else if (word === "cat" || word === "dog" || word === "bird" || word === "horse" || word === "fish")
+    return "ANIMAL"
+    else
+    return "UNKNOWN"
 }
