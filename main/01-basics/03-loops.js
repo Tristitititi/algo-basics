@@ -3,8 +3,16 @@
  */
 export function find(array, element) {
     let i = 0
-    while (i < array)
+    while (i < array.length){
+        console.log(array [i])
+        if (array [i] === element){
+            return i
+        }
+        ++i
+    }
 }
+let resultat = find([1,3,12,6,15,16], 15)
+console.log('Le résultat est ' + resultat)
 
 /**
  * Write a function that return the input word with reversed letters
