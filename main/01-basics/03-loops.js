@@ -21,8 +21,14 @@ console.log('Le résultat est ' + resultat)
  * ["w", "o", "r", "d"].join("") to join the elements of an array
  */
 export function reverseString(word) {
-    
+    let i = 0
+    let wordArray = word.split("")
+    let Array
+    for (i )
 }
+
+let resultat = reverseString (string.split("w","o","r","l","d"))
+console.log('Le résultat est ' + resultat)
 
 /**
  * Write a function to check which number nearest to the value 100 among two given integers. Return 0 if the two numbers are equal
